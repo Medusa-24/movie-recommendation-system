@@ -104,7 +104,7 @@ footer {
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent background */
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
   color: white;
   text-align: center;
   padding: 10px 0;
