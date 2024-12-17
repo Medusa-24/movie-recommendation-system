@@ -52,7 +52,7 @@ if st.button("Recommend"):
         # Display the first three items in the first row
         for i, col in enumerate(cols1):
             with col:
-                st.text(names[i])
+                st.text(:violet[names[i]])
                 st.image(posters[i])
 
         # Display the next three items in the second row
@@ -67,7 +67,7 @@ if st.button("Recommend"):
                 st.text(names[i + 6])  # Start from index 6 for the third row
                 st.image(posters[i + 6])
                 
-        st.write("Thank you 😊")
+        st.write(":violet[Thank you] 😊")
         
     except Exception:
         
