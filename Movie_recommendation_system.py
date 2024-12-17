@@ -52,8 +52,7 @@ if st.button("Recommend"):
         # Display the first three items in the first row
         for i, col in enumerate(cols1):
             with col:
-                # st.text(names[i])
-                st.markdown(f'<p style="color:blue;">{name[i]}</p>', unsafe_allow_html=True)
+                st.text(names[i])
                 st.image(posters[i])
 
         # Display the next three items in the second row
