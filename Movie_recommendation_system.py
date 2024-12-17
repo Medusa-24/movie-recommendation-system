@@ -38,9 +38,9 @@ def recommend(movie):
     
     return recommend_movies,recommend_movies_poster
 
-st.title(":violet[Movie Recommender]")
+st.title(":orange[Movie Recommender]")
 
-selected = st.selectbox(":violet[Select a movie from the given list:]", movies["title"].values)
+selected = st.selectbox(":orange[Select a movie from the given list:]", movies["title"].values)
 
 if st.button("Recommend"):
     try:
@@ -81,7 +81,7 @@ page_element="""
   background-image: url("https://wallpaperaccess.com/full/5696663.jpg");
   background-size: cover;
   background-position: center;
-  animation: move-background 10s linear infinite;
+  animation: move-background 10s infinite linear;
   flex:1;
 }
 
@@ -94,10 +94,16 @@ page_element="""
     background-position: 0 0;
   }
   to {
-    background-position: 100% 0;
+    background-position: 100vw 0;
   }
 }
 
+@media (min-width: 1024px) {
+    /* Customize behavior for larger screens here */
+    body {
+        animation: move-background 20s infinite linear;
+    }
+}
 
 footer {
   position: fixed; /* Keeps the footer fixed at the bottom */
@@ -114,9 +120,8 @@ footer {
 </style>
 
 <footer>
-Made by: Anubha Kushwaha, Anamika Verma, Archana Chaurshiya
+Made by: Anubha, Anamika, Archana
 </footer>
 """
 
 st.markdown(page_element, unsafe_allow_html=True)
-
